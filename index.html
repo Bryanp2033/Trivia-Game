@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <title>Trivia Game</title>
     <style>
         .questions{
@@ -13,6 +14,93 @@
     </style>
 </head>
 <body>
+    <script>
+      var userScore = {
+        correct: 0,
+        incorrect: 0,
+        unanswered: 0
+      };
+
+       var answers = ["wallaby","deedee","farmers","dora-winifred","lighter-fur","maurice","hillwood","grey-ghost"];
+       var answer1 = ["wallaby"];
+       var answer2 = ["deedee"];
+       var answer3 = ["farmers"];
+       var answer4 = ["dora-winifred"];
+       var answer5 = ["lighter-fur"];
+       var answer6 = ["maurice"];
+       var answer7 = ["hillwood"];
+       var answer8 = ["grey-ghost"];
+
+       var results = function(){
+
+            if($("input[value='wallaby']:checked").val() == answer1){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='deedee']:checked").val() == answer2){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='farmers']:checked").val() == answer3){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='dora-winifred']:checked").val() == answer4){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='lighter-fur']:checked").val() == answer5){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='maurice']:checked").val() == answer6){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='hillwood']:checked").val() == answer7){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            if($("input[value='grey-ghost']:checked").val() == answer8){
+                userScore.correct ++ 
+                console.log("you got question one right " + userScore.correct);
+            } else {
+                console.log("you got it wrong")
+            }
+            console.log(userScore.correct);
+            console.log(userScore.incorrect);
+            console.log(userScore.correct);
+
+            // for(i = 0; i < answers.length; i++){
+            
+            //     if ($('input[name="answers"]:checked').val() == answers[i]){
+            //         userScore.correct++;
+            //         console.log("You got it right " + userScore.correct);
+            //     } else if ($('input[name="answers"]:checked').val() !== answers[i]){
+            //         userScore.incorrect++;
+            //         console.log("You got it wrong " + userScore.incorrect);
+            //     } else{
+            //         userScore.unanswered ++;
+            //         console.log("You didnt answered it" + userScore.unanswered);
+            //     }
+            // };
+        }
+
+    </script>
     <div class="trivia-title">
         <h1>How Well Do You Know 1990's Cartoons?</h1>
     </div>
@@ -64,8 +152,8 @@
     <form action="">
             <input type="radio" name="answers" value="hill-valley">Hill Valley<br>
             <input type="radio" name="answers" value="pleasantville">Pleasantville<br>
-            <input type="radio" name="answers" value="wallaby">Hillwood<br>
-            <input type="radio" name="answers" value="dog">Radiator Springs<br>
+            <input type="radio" name="answers" value="hillwood">Hillwood<br>
+            <input type="radio" name="answers" value="radiator-springs">Radiator Springs<br>
     </form>
     <p>In Batman: The Animated Series, What was the name of the TV superhero who was the inspiration for Batman?
       <form action="">
@@ -74,6 +162,8 @@
         <input type="radio" name="answers" value="blue-beetle">The Blue Beetle<br>
         <input type="radio" name="answers" value="green-hornet">The Green Hornet<br>
     </form>
+
+    <input type="submit" value="submit" onclick="results()">
     </div>
 
     <script>
