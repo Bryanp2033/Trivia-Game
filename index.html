@@ -33,58 +33,67 @@
 
        var results = function(){
 
+            
             if($("input[value='wallaby']:checked").val() == answer1){
+                if(userScore.correct < 8){
                 userScore.correct ++ 
                 console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
             }
-            if($("input[value='deedee']:checked").val() == answer2){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
             } else {
+                if(userScore.incorrect < 8){
+                userScore.incorrect ++
                 console.log("you got it wrong")
+                }
             }
-            if($("input[value='farmers']:checked").val() == answer3){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            if($("input[value='dora-winifred']:checked").val() == answer4){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            if($("input[value='lighter-fur']:checked").val() == answer5){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            if($("input[value='maurice']:checked").val() == answer6){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            if($("input[value='hillwood']:checked").val() == answer7){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            if($("input[value='grey-ghost']:checked").val() == answer8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            } else {
-                console.log("you got it wrong")
-            }
-            console.log(userScore.correct);
-            console.log(userScore.incorrect);
-            console.log(userScore.correct);
+        
+            // if($("input[value='deedee']:checked").val() == answer2){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='farmers']:checked").val() == answer3){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='dora-winifred']:checked").val() == answer4){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='lighter-fur']:checked").val() == answer5){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='maurice']:checked").val() == answer6){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='hillwood']:checked").val() == answer7){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
+            // if($("input[value='grey-ghost']:checked").val() == answer8){
+            //     userScore.correct ++ 
+            //     console.log("you got question one right " + userScore.correct);
+            // } else {
+            //     console.log("you got it wrong")
+            // }
 
+           
+
+            var playerScore = "Correct: " + userScore.correct + "<br>" + "Incorrect: " + userScore.incorrect + "<br>" + "Unanswered: " + userScore.unanswered
+            $('#final-score').html(playerScore)
+           
             // for(i = 0; i < answers.length; i++){
             
             //     if ($('input[name="answers"]:checked').val() == answers[i]){
@@ -164,6 +173,8 @@
     </form>
 
     <input type="submit" value="submit" onclick="results()">
+
+    <div id="final-score"></div>
     </div>
 
     <script>
