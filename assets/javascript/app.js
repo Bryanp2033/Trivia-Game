@@ -18,7 +18,7 @@ var userScore = {
 
    var results = function(){
 
-        if($("input[value='deedee']:checked").val() == answer2){
+        if($("input[value='wallaby']:checked").val() == answer1){
             if(userScore.correct < 8){
             userScore.correct ++ 
             console.log("you got question one right " + userScore.correct);

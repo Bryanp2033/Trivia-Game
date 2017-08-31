@@ -5,76 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
     <style>
-        .questions{
-            padding: 10px;
+        body{
+            background-image: url("https://i.stack.imgur.com/6d1kC.jpg");
         }
+
+        .trivia-title{
+            font-size: 30px;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+            border-radius: 5px; 
+            margin: 50px 0px 30px 310px;
+            color: white;
+            background-color: black;
+            width: 49%;
+            padding: 15px;
+        }
+
+        .trivia-timer{
+            font-size: 30px;
+            font-family: 'Roboto Slab', serif;
+            border-radius: 5px; 
+            margin: 30px 0px 5px 550px;
+            color: white;
+            background-color: black;
+            width: 11%;
+            padding: 15px;
+        }
+
+        .questionslist{
+            border-radius: 10px; 
+            padding: 20px;
+            background-color: white;
+            width: 50%;
+            margin-left: 300px;
+        }
+
+        p{
+            font-size: 25px;
+            font-family: 'Baloo Tammudu', cursive;
+            padding-top:25px; 
+            padding-bottom:10px; 
+        }
+        .questions { 
+           font-size: 25px;
+           margin: 10px;
+           margin-right: 5px;
+        }
+        .button{
+           font-size: 20px;
+           margin-top: 15px;
+           margin-left: 225px;
+           padding: 15px;
+           border: none;
+           color: white;
+           background-color: green;
+        }
+
     </style>
 </head>
 <body>
     <div class="trivia-title">
         <h1>How Well Do You Know 1990's Cartoons?</h1>
     </div>
-    <br>
-    <div class="questions">
+
+    <div class="trivia-timer">
+            <h3>Timer: </h3>
+    </div>
+    
+    <div class="questionslist">
     <p>What kind of animal is Rocko(From Rocko's Mordern Life)?</p>
     <form action="">
-        <input type="radio" class="questions" name="answers" value="">Mongoose<br>
-        <input type="radio" class="questions" name="answers" value="">Kangaroo<br>
-        <input type="radio" class="questions" name="answers" value="wallaby">Wallaby<br>
-        <input type="radio" class="questions" name="answers" value="">Dog<br>
+
+        <input type="radio" class="questions" name="answers" value="">Mongoose
+        <input type="radio" class="questions" name="answers" value="">Kangaroo
+        <input type="radio" class="questions" name="answers" value="wallaby">Wallaby
+        <input type="radio" class="questions" name="answers" value="">Dog
     </form>
     <p>In Dexter's Laboratory, What is Dexter's sister's name?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="deedee">Deedee<br>
-            <input type="radio" class="questions" name="answers" value="">Dolly<br>
-            <input type="radio" class="questions" name="answers" value="">Dorothy<br>
-            <input type="radio" class="questions" name="answers" value="">Dora<br>
+            <input type="radio" class="questions" name="answers" value="deedee">Deedee
+            <input type="radio" class="questions" name="answers" value="">Dolly
+            <input type="radio" class="questions" name="answers" value="">Dorothy
+            <input type="radio" class="questions" name="answers" value="">Dora
     </form>
     <p>What occupation do Courage's owners hold?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="">Doctors<br>
-            <input type="radio" class="questions" name="answers" value="farmers">Farmers<br>
-            <input type="radio" class="questions" name="answers" value="">Sales People<br>
-            <input type="radio" class="questions" name="answers" value="">quilters<br>
+            <input type="radio" class="questions" name="answers" value="">Doctors
+            <input type="radio" class="questions" name="answers" value="farmers">Farmers
+            <input type="radio" class="questions" name="answers" value="">Sales People
+            <input type="radio" class="questions" name="answers" value="">quilters
     </form>
     <p>In Arthur, what does Arthur's little sister's initals(D.W.) stand for? </p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="">Daisy Water<br>
-            <input type="radio" class="questions" name="answers" value="">Dorothy Whitny<br>
-            <input type="radio" class="questions" name="answers" value="dora-winifred">Dora Winifred<br>
-            <input type="radio" class="questions" name="answers" value="">Diana Walter<br>
+            <input type="radio" class="questions" name="answers" value="">Daisy Water
+            <input type="radio" class="questions" name="answers" value="">Dorothy Whitny
+            <input type="radio" class="questions" name="answers" value="dora-winifred">Dora Winifred
+            <input type="radio" class="questions" name="answers" value="">Diana Walter
     </form>
     <p>In the Angry Beavers, which brother is named Norbert?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="">The beaver with darker fur<br>
-            <input type="radio" class="questions" name="answers" value="lighter-fur">The beaver with lighter fur<br>
-            <input type="radio" class="questions" name="answers" value="">The beaver with brown fur<br>
-            <input type="radio" class="questions" name="answers" value="">No brother is named Norbet<br>
+            <input type="radio" class="questions" name="answers" value="">beaver with darker fur
+            <input type="radio" class="questions" name="answers" value="lighter-fur">beaver with lighter fur
+            <input type="radio" class="questions" name="answers" value="">beaver with brown fur
+            <input type="radio" class="questions" name="answers" value="">No brother is named Norbet
     </form>
     <p>In the TV show Rocket Power, what is Twister's real name?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="">Mark<br>
-            <input type="radio" class="questions" name="answers" value="">Marvin<br>
-            <input type="radio" class="questions" name="answers" value="">Markus<br>
-            <input type="radio" class="questions" name="answers" value="maurice">Maurice<br>
+            <input type="radio" class="questions" name="answers" value="">Mark
+            <input type="radio" class="questions" name="answers" value="">Marvin
+            <input type="radio" class="questions" name="answers" value="">Markus
+            <input type="radio" class="questions" name="answers" value="maurice">Maurice
     </form>
     <p>The fictional city where Hey Arnold! is set is called?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="">Hill Valley<br>
-            <input type="radio" class="questions" name="answers" value="">Pleasantville<br>
-            <input type="radio" class="questions" name="answers" value="hillwood">Hillwood<br>
-            <input type="radio" class="questions" name="answers" value="">Radiator Springs<br>
+            <input type="radio" class="questions" name="answers" value="">Hill Valley
+            <input type="radio" class="questions" name="answers" value="">Pleasantville
+            <input type="radio" class="questions" name="answers" value="hillwood">Hillwood
+            <input type="radio" class="questions" name="answers" value="">Radiator Springs
     </form>
     <p>In Batman: The Animated Series, What was the name of the TV superhero who was the inspiration for Batman?</p>
       <form action="">
-        <input type="radio" class="questions" name="answers" value="grey-ghost">Grey Ghost<br>
-        <input type="radio" class="questions" name="answers" value="">The Brown Hornet<br>
-        <input type="radio" class="questions" name="answers" value="">The Blue Beetle<br>
-        <input type="radio" class="questions" name="answers" value="">The Green Hornet<br>
+        <input type="radio" class="questions" name="answers" value="grey-ghost">Grey Ghost
+        <input type="radio" class="questions" name="answers" value="">The Brown Hornet
+        <input type="radio" class="questions" name="answers" value="">The Blue Beetle
+        <input type="radio" class="questions" name="answers" value="">The Green Hornet
     </form>
 
     <button id='submit' class='button' onclick="results()">Submit Answers</button>
