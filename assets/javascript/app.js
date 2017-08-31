@@ -14,7 +14,27 @@ var userScore = {
    var answer8 = ["grey-ghost"];
 
 
+  $(document).ready(function(){
+   
+    $('#final-score').hide();
+  });
+
+  var timer = 25
   
+  setTimeout(function(){
+  }, 1000 * 25);
+// function startTimer(){
+//     var timer = 25;
+//     String.valueOf(timer);
+//     setInterval(function(){
+//         $('#timer').html(timer)
+//         console.log(timer);
+//     }, 1000 * 25)
+// }
+//   var timer = 25;
+//   setTimeout(setTime, 1000 * 5)
+
+//   function setTime() {
 
    var results = function(){
 
@@ -108,9 +128,9 @@ var userScore = {
             }
         }
 
-
-
-        var playerScore = "Correct: " + userScore.correct + "<br>" + "Incorrect: " + userScore.incorrect + "<br>"
-        $('#final-score').html(playerScore)
+        var playerScore = "Correct: " + userScore.correct + "<br>" +  "Incorrect: " + userScore.incorrect
+        $('#final-score').show();
+        $('#final-score').html(playerScore);
+        $('.questionslist').hide();
         $("#submit").hide();
     }

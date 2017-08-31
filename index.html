@@ -5,69 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
-    <style>
-        body{
-            background-image: url("https://i.stack.imgur.com/6d1kC.jpg");
-        }
-
-        .trivia-title{
-            font-size: 30px;
-            font-family: 'Roboto Slab', serif;
-            text-align: center;
-            border-radius: 5px; 
-            margin: 50px 0px 30px 310px;
-            color: white;
-            background-color: black;
-            width: 49%;
-            padding: 15px;
-        }
-
-        .trivia-timer{
-            font-size: 30px;
-            font-family: 'Roboto Slab', serif;
-            border-radius: 5px; 
-            margin: 30px 0px 5px 550px;
-            color: white;
-            background-color: black;
-            width: 11%;
-            padding: 15px;
-        }
-
-        .questionslist{
-            border-radius: 10px; 
-            padding: 20px;
-            background-color: white;
-            width: 50%;
-            margin-left: 300px;
-        }
-
-        p{
-            font-size: 25px;
-            font-family: 'Baloo Tammudu', cursive;
-            padding-top:25px; 
-            padding-bottom:10px; 
-        }
-        .questions { 
-           font-size: 25px;
-           margin: 10px;
-           margin-right: 5px;
-        }
-        .button{
-           font-size: 20px;
-           margin-top: 15px;
-           margin-left: 225px;
-           padding: 15px;
-           border: none;
-           color: white;
-           background-color: green;
-        }
-
-    </style>
 </head>
 <body>
     <div class="trivia-title">
@@ -75,13 +18,12 @@
     </div>
 
     <div class="trivia-timer">
-            <h3>Timer: </h3>
+            <h3 id="timer">Timer: </h3>
     </div>
     
     <div class="questionslist">
     <p>What kind of animal is Rocko(From Rocko's Mordern Life)?</p>
     <form action="">
-
         <input type="radio" class="questions" name="answers" value="">Mongoose
         <input type="radio" class="questions" name="answers" value="">Kangaroo
         <input type="radio" class="questions" name="answers" value="wallaby">Wallaby
@@ -136,11 +78,10 @@
         <input type="radio" class="questions" name="answers" value="">The Blue Beetle
         <input type="radio" class="questions" name="answers" value="">The Green Hornet
     </form>
-
+</div>
     <button id='submit' class='button' onclick="results()">Submit Answers</button>
 
     <div id="final-score"></div>
-    </div>
 
     <script>
     </script>

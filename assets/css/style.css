@@ -1,0 +1,66 @@
+
+body{
+    background-image: url("https://i.stack.imgur.com/6d1kC.jpg");
+}
+
+.trivia-title{
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    border-radius: 5px; 
+    margin: 50px 0px 30px 310px;
+    color: white;
+    background-color: black;
+    width: 49%;
+    padding: 15px;
+}
+
+.trivia-timer{
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 5px; 
+    margin: 30px 0px 5px 550px;
+    color: white;
+    background-color: black;
+    width: 11%;
+    padding: 15px;
+}
+
+.questionslist{
+    border-radius: 10px; 
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+    margin-left: 300px;
+}
+
+p{
+    font-size: 25px;
+    font-family: 'Baloo Tammudu', cursive;
+    padding-top:25px; 
+    padding-bottom:10px; 
+}
+.questions { 
+   font-size: 25px;
+   margin: 10px;
+   margin-right: 5px;
+}
+
+.button{
+    font-size: 20px;
+    margin: 15px 0px 15px 530px;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: green;
+    }
+ 
+#final-score{
+    font-size: 30px;
+    border-radius: 10px; 
+    padding: 20px;
+    background-color: white;
+    width: 30%;
+    font-family: 'Baloo Tammudu', cursive;
+    margin-left: 415px;  
+}
