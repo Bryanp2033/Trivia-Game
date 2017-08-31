@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
     <style>
         .questions{
@@ -14,152 +15,6 @@
     </style>
 </head>
 <body>
-    <script>
-      var userScore = {
-        correct: 0,
-        incorrect: 0,
-        unanswered: 0
-      };
-
-       var answers = ["wallaby","deedee","farmers","dora-winifred","lighter-fur","maurice","hillwood","grey-ghost"];
-       var answer1 = ["wallaby"];
-       var answer2 = ["deedee"];
-       var answer3 = ["farmers"];
-       var answer4 = ["dora-winifred"];
-       var answer5 = ["lighter-fur"];
-       var answer6 = ["maurice"];
-       var answer7 = ["hillwood"];
-       var answer8 = ["grey-ghost"];
-
-       $(document).ready(function(){
-
-            $("#submit").on('click', function(){
-
-                var array = [];
-
-                var correct = $("input[value='right']")
-                
-                console.log(correct);
-                //push selected to an array
-                    //ie array = [wrong, right, right, wrong]
-                    //for loop over the array
-                        //count how many times wrong and right appear
-                        //log how many right appear
-            })
-
-      
-
-       var results = function(){
-
-        
-
-            
-            if($("input[value='right']:checked").val() == answer1){
-                if(userScore.correct < 8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            }
-            } else {
-                if(userScore.incorrect < 8){
-                userScore.incorrect ++
-                console.log("you got it wrong")
-                }
-            }
-            if($("input[value='right']:checked").val() == answer2){
-                if(userScore.correct < 8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            }
-            } else {
-                if(userScore.incorrect < 8){
-                userScore.incorrect ++
-                console.log("you got it wrong")
-                }
-            }
-            if($("input[value='right']:checked").val() == answer3){
-                if(userScore.correct < 8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            }
-            } else {
-                if(userScore.incorrect < 8){
-                userScore.incorrect ++
-                console.log("you got it wrong")
-                }
-            }
-            if($("input[value='right']:checked").val() == answer4){
-                if(userScore.correct < 8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            }
-            } else {
-                if(userScore.incorrect < 8){
-                userScore.incorrect ++
-                console.log("you got it wrong")
-                }
-            }
-            if($("input[value='right']:checked").val() == answer5){
-                if(userScore.correct < 8){
-                userScore.correct ++ 
-                console.log("you got question one right " + userScore.correct);
-            }
-            } else {
-                if(userScore.incorrect < 8){
-                userScore.incorrect ++
-                console.log("you got it wrong")
-                }
-            }
-            // if($("input[value='deedee']:checked").val() == answer2){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='farmers']:checked").val() == answer3){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='dora-winifred']:checked").val() == answer4){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='lighter-fur']:checked").val() == answer5){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='maurice']:checked").val() == answer6){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='hillwood']:checked").val() == answer7){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-            // if($("input[value='grey-ghost']:checked").val() == answer8){
-            //     userScore.correct ++ 
-            //     console.log("you got question one right " + userScore.correct);
-            // } else {
-            //     console.log("you got it wrong")
-            // }
-
-           
-
-            var playerScore = "Correct: " + userScore.correct + "<br>" + "Incorrect: " + userScore.incorrect + "<br>" + "Unanswered: " + userScore.unanswered
-            $('#final-score').html(playerScore)
-        }
-    })
-
-    </script>
     <div class="trivia-title">
         <h1>How Well Do You Know 1990's Cartoons?</h1>
     </div>
@@ -167,62 +22,62 @@
     <div class="questions">
     <p>What kind of animal is Rocko(From Rocko's Mordern Life)?</p>
     <form action="">
-        <input type="radio" class="questions" name="answers" value="wrong">Mongoose<br>
-        <input type="radio" class="questions" name="answers" value="wrong">Kangaroo<br>
-        <input type="radio" class="questions" name="answers" value="right">Wallaby<br>
-        <input type="radio" class="questions" name="answers" value="wrong">Dog<br>
+        <input type="radio" class="questions" name="answers" value="">Mongoose<br>
+        <input type="radio" class="questions" name="answers" value="">Kangaroo<br>
+        <input type="radio" class="questions" name="answers" value="wallaby">Wallaby<br>
+        <input type="radio" class="questions" name="answers" value="">Dog<br>
     </form>
     <p>In Dexter's Laboratory, What is Dexter's sister's name?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="right">Deedee<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Dolly<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Dorothy<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Dora<br>
+            <input type="radio" class="questions" name="answers" value="deedee">Deedee<br>
+            <input type="radio" class="questions" name="answers" value="">Dolly<br>
+            <input type="radio" class="questions" name="answers" value="">Dorothy<br>
+            <input type="radio" class="questions" name="answers" value="">Dora<br>
     </form>
     <p>What occupation do Courage's owners hold?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="wrong">Doctors<br>
-            <input type="radio" class="questions" name="answers" value="right">Farmers<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Sales People<br>
-            <input type="radio" class="questions" name="answers" value="wrong">quilters<br>
+            <input type="radio" class="questions" name="answers" value="">Doctors<br>
+            <input type="radio" class="questions" name="answers" value="farmers">Farmers<br>
+            <input type="radio" class="questions" name="answers" value="">Sales People<br>
+            <input type="radio" class="questions" name="answers" value="">quilters<br>
     </form>
     <p>In Arthur, what does Arthur's little sister's initals(D.W.) stand for? </p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="wrong">Daisy Water<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Dorothy Whitny<br>
-            <input type="radio" class="questions" name="answers" value="right">Dora Winifred<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Diana Walter<br>
+            <input type="radio" class="questions" name="answers" value="">Daisy Water<br>
+            <input type="radio" class="questions" name="answers" value="">Dorothy Whitny<br>
+            <input type="radio" class="questions" name="answers" value="dora-winifred">Dora Winifred<br>
+            <input type="radio" class="questions" name="answers" value="">Diana Walter<br>
     </form>
     <p>In the Angry Beavers, which brother is named Norbert?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="wrong">The beaver with darker fur<br>
-            <input type="radio" class="questions" name="answers" value="right">The beaver with lighter fur<br>
-            <input type="radio" class="questions" name="answers" value="wrong">The beaver with brown fur<br>
-            <input type="radio" class="questions" name="answers" value="wrong">No brother is named Norbet<br>
+            <input type="radio" class="questions" name="answers" value="">The beaver with darker fur<br>
+            <input type="radio" class="questions" name="answers" value="lighter-fur">The beaver with lighter fur<br>
+            <input type="radio" class="questions" name="answers" value="">The beaver with brown fur<br>
+            <input type="radio" class="questions" name="answers" value="">No brother is named Norbet<br>
     </form>
     <p>In the TV show Rocket Power, what is Twister's real name?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="wrong">Mark<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Marvin<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Markus<br>
-            <input type="radio" class="questions" name="answers" value="right">Maurice<br>
+            <input type="radio" class="questions" name="answers" value="">Mark<br>
+            <input type="radio" class="questions" name="answers" value="">Marvin<br>
+            <input type="radio" class="questions" name="answers" value="">Markus<br>
+            <input type="radio" class="questions" name="answers" value="maurice">Maurice<br>
     </form>
     <p>The fictional city where Hey Arnold! is set is called?</p>
     <form action="">
-            <input type="radio" class="questions" name="answers" value="wrong">Hill Valley<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Pleasantville<br>
-            <input type="radio" class="questions" name="answers" value="right">Hillwood<br>
-            <input type="radio" class="questions" name="answers" value="wrong">Radiator Springs<br>
+            <input type="radio" class="questions" name="answers" value="">Hill Valley<br>
+            <input type="radio" class="questions" name="answers" value="">Pleasantville<br>
+            <input type="radio" class="questions" name="answers" value="hillwood">Hillwood<br>
+            <input type="radio" class="questions" name="answers" value="">Radiator Springs<br>
     </form>
-    <p>In Batman: The Animated Series, What was the name of the TV superhero who was the inspiration for Batman?
+    <p>In Batman: The Animated Series, What was the name of the TV superhero who was the inspiration for Batman?</p>
       <form action="">
-        <input type="radio" class="questions" name="answers" value="right">Grey Ghost<br>
-        <input type="radio" class="questions" name="answers" value="wrong">The Brown Hornet<br>
-        <input type="radio" class="questions" name="answers" value="wrong">The Blue Beetle<br>
-        <input type="radio" class="questions" name="answers" value="wrong">The Green Hornet<br>
+        <input type="radio" class="questions" name="answers" value="grey-ghost">Grey Ghost<br>
+        <input type="radio" class="questions" name="answers" value="">The Brown Hornet<br>
+        <input type="radio" class="questions" name="answers" value="">The Blue Beetle<br>
+        <input type="radio" class="questions" name="answers" value="">The Green Hornet<br>
     </form>
 
-        <button id='submit' class='button'>hello</button>
+    <button id='submit' class='button' onclick="results()">Submit Answers</button>
 
     <div id="final-score"></div>
     </div>
